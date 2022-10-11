@@ -21,16 +21,31 @@ body{
 }
 
 
+/* Header */
+.header{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
+
+
+
+/* GRID */
 .grid{
   display:grid;
   grid-template-columns: 1fr;
-  gap:40px
+  gap:40px;
 }
+.grid article{
+  box-shadow: 0 10px 10px rgba(32, 45, 54, 0.5)
+}
+
+
 
 .grid article img{
   border-radius: 5px 5px 0 0 ;
-height: 250px;
+/* height: 250px; */
 }
 
 .grid .details h3{
@@ -67,8 +82,12 @@ height: 250px;
 }
 
 @media (min-width:992px) {
+  body{
+    padding:50px 100px
+  }
   .grid {
     grid-template-columns: repeat(4, 1fr);
+    gap:60px
   }
 
 }

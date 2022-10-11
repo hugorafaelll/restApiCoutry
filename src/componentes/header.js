@@ -4,7 +4,12 @@ const Header = () => {
   return (
     <>
       <header className="header">
-        <h1>Encontre o Pais</h1>
+        <div>
+          <h1>Paises</h1>
+        </div>
+        <dliv>
+          <i className="fas fa-mon"></i>Dark Mode
+        </dliv>
       </header>
     </>
   );
