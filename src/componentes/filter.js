@@ -12,15 +12,17 @@ const Filter = () => {
         />
       </form>
 
-      <div>
+      <div className="region-filter">
         <select name="select" id="select" className="select">
-          <option value="Asia">Filter By Region</option>
-          <option value="Africa">Filter By Region</option>
-          <option value="America">Filter By Region</option>
-          <option value="Europa">Filter By Region</option>
-          <option value="Oceania">Filter By Region</option>
+          <option value="Asia">Asia</option>
+          <option value="Africa">Africa</option>
+          <option value="America">America</option>
+          <option value="Europa">Europa</option>
+          <option value="Oceania">Oceania</option>
         </select>
       </div>
     </section>
   );
 };
+
+export default Filter;
