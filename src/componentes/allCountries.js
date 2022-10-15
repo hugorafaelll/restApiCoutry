@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const url = "https://restcountries.com/v2/all";
 
@@ -39,6 +40,7 @@ const AllCountries = () => {
                     Região: <span>{region}</span>{" "}
                   </h4>
                   <h4>Capital: {capital}</h4>
+                  <Link to={`/countries/${name}`}>Learn More</Link>
                 </div>
               </div>
             </article>
