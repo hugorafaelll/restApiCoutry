@@ -1,7 +1,7 @@
 import React from "react";
-import AllCountries from "./componentes/allCountries";
-import Filter from "./componentes/filter";
-import Header from "./componentes/header";
+import AllCountries from "./componentes/AllCountries";
+import Filter from "./componentes/Filter";
+import Header from "./componentes/Header";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Country from "./componentes/Country";
 

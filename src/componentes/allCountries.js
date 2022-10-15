@@ -21,7 +21,7 @@ const AllCountries = () => {
   }, []);
 
   return (
-    <>
+    <div>
       <section className="grid">
         {countries.map((country) => {
           const { name, population, region, capital, flag, numericCode } =
@@ -47,7 +47,7 @@ const AllCountries = () => {
           );
         })}
       </section>
-    </>
+    </div>
   );
 };
 
