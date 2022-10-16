@@ -20,35 +20,50 @@ const AllCountries = () => {
     fetcCountries();
   }, []);
 
-  return (
-    <div>
-      <section className="grid">
-        {countries.map((country) => {
-          const { name, population, region, capital, flag, numericCode } =
-            country;
+  const removeCountry = (numericCode) => {
+    const newCountry = countries.filter(
+      (country) => country.numericCode !== numericCode
+    );
+    setCountries(newCountry);
+  };
 
-          return (
-            <article key={numericCode}>
-              <div>
-                <img src={flag} alt="name" />
-                <div className="details">
-                  <h3>{name}</h3>
-                  <h4>
-                    População: <span> {population}</span>{" "}
-                  </h4>
-                  <h4>
-                    Região: <span>{region}</span>{" "}
-                  </h4>
-                  <h4>Capital: {capital}</h4>
-                  <Link to={`/countries/${name}`}>Learn More</Link>
-                </div>
+  <div>
+    <section className="grid">
+      {countries.map((country) => {
+        const { name, population, region, capital, flag, numericCode } =
+          country;
+
+        return (
+          <article key={numericCode}>
+            <div>
+              <img src={flag} alt="name" />
+              <div className="details">
+                <h3>{name}</h3>
+                <h4>
+                  População: <span> {population}</span>{" "}
+                </h4>
+                <h4>
+                  Região: <span>{region}</span>{" "}
+                </h4>
+                <h4>Capital: {capital}</h4>
+                <Link to={`/countries/${name}`} className="btn">
+                  {" "}
+                  Learn More{" "}
+                </Link>
+                <button
+                  className="btn"
+                  onClick={() => removeCountry(numericCode)}
+                >
+                  {" "}
+                  Remove Country{" "}
+                </button>
               </div>
-            </article>
-          );
-        })}
-      </section>
-    </div>
-  );
+            </div>
+          </article>
+        );
+      })}
+    </section>
+  </div>;
 };
 
 export default AllCountries;
