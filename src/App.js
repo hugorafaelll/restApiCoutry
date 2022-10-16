@@ -1,8 +1,8 @@
 import React from "react";
-import AllCountries from "./componentes/AllCountries";
-import Filter from "./componentes/Filter";
-import Header from "./componentes/Header";
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import Header from "./componentes/Header";
+import Filter from "./componentes/Filter";
+import AllCountries from "./componentes/AllCountries";
 import Country from "./componentes/Country";
 
 function App() {
