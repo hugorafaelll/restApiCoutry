@@ -45,7 +45,11 @@ const AllCountries = () => {
                   </h4>
                   <h4>Capital: {capital}</h4>
                   <div className="btn1">
-                    <Link to={`/countries/${name}`} children={<Country />}>
+                    <Link
+                      to={`/countries/${name}`}
+                      className="btn"
+                      children={<Country />}
+                    >
                       Learn More
                     </Link>
                     <button
