@@ -1,5 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600&display=swap');
 
+:root{
+    --dark-bg-color:hsl(207,26%,17% );
+    --article-color: hsl(209,23%,22%);
+    --text-color:hsl(0,0%,100%);
+    --light-mode-text:hsl(0,0%,52%);
+    --light-mode-input:hsl(0,0%,52%);
+    --light-mode-background:hsl(0,0%,98%);
+
+
+
+
+
+
+}
+
+
+
+
+
+
 *{
   margin:0;
   padding:0;
@@ -20,6 +40,16 @@ body{
   color:#fff
 }
 
+.btn1{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 5px;
+}
+
+.btn{
+  background-color: var(--dark-bg-color);
+}
 
 /* Header */
 .header{
