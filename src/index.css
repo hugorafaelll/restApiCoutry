@@ -52,12 +52,19 @@ body{
   color: var(--dark-bg-color);
 }
 
+.btn-light{
+  background-color: var(--article-color);
+  border: 2px solid var(--article-color);
+}
+
+
 /* Header */
 .header{
   display:flex;
   align-items: center;
   justify-content: space-between;
   background-color:#2b3743;
+  padding: 15px;
 }
 
 
