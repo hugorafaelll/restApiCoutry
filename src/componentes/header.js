@@ -7,9 +7,9 @@ const Header = () => {
         <div>
           <h1>Where in the world?</h1>
         </div>
-        <dliv>
-          <i className="fas fa-mon"></i>Dark Mode
-        </dliv>
+        <div>
+          <i className="fa-regular fa-moon"></i>
+        </div>
       </header>
     </>
   );
