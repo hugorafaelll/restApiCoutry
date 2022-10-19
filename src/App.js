@@ -3,7 +3,7 @@ import AllCountries from "./componentes/allCountries";
 import Filter from "./componentes/filter";
 import Header from "./componentes/header";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Country from "./componentes/Country";
+import Country from "./componentes/country";
 
 function App() {
   return (
