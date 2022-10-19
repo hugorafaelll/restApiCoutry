@@ -1,9 +1,9 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import Header from "./componentes/header";
-import Filter from "./componentes/filter";
 import AllCountries from "./componentes/allCountries";
-import Country from "./componentes/country";
+import Filter from "./componentes/filter";
+import Header from "./componentes/header";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Country from "./componentes/Country";
 
 function App() {
   return (

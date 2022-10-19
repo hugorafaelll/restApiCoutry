@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600&display=swap');
 
+
 :root {
   --dark-bg-color: hsl(207, 26%, 17%);
   --article-color: hsl(209, 23%, 22%);
@@ -13,8 +14,16 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
+:root{
+    --dark-bg-color:hsl(207,26%,17% );
+    --article-color: hsl(209,23%,22%);
+    --text-color:hsl(0,0%,100%);
+    --light-mode-text:hsl(0,0%,52%);
+    --light-mode-input:hsl(0,0%,52%);
+    --light-mode-background:hsl(0,0%,98%);
+}
+
 
 
 img {
@@ -57,13 +66,40 @@ body {
   border: 2px solid var(--article-color);
 }
 
+.btn1{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 5px;
+}
+
+.btn{
+  background-color: var(--dark-bg-color);
+  padding: 5px;
+  text-decoration: none;
+  color:#fff;
+  border:2px solid var(--dark-bg-color);
+  border-radius: 4px;
+  transition: background-color 0,7s;
+}
+
+.btn:hover{
+  background-color: #fff;
+  color: var(--dark-bg-color);
+}
+
+.btn-light{
+  background-color: var(--article-color);
+  border: 2px solid var(--article-color);
+}
+
 
 /* Header */
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #2b3743;
+  background-color:#2b3743;
   padding: 15px;
 }
 
