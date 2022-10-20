@@ -43,13 +43,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 5px;
 }
 
 .btn {
   background-color: var(--dark-bg-color);
   padding: 5px;
   text-decoration: none;
+  cursor:pointer;
   color: #fff;
   border: 2px solid var(--dark-bg-color);
   border-radius: 4px;
