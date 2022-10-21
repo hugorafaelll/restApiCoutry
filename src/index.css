@@ -14,6 +14,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 :root{
     --dark-bg-color:hsl(207,26%,17% );
@@ -31,13 +32,34 @@ img {
 }
 
 
-
 body {
   font-family: 'Nunito Sans', 'sans-serif';
   padding: 20px;
   background-color: #202d36;
   color: #fff
 }
+
+body.light-theme{
+  background-color: var(--light-mode-background);
+  color:var(--light-mode-text)
+}
+
+
+.header,
+.form,
+.countries {
+  padding: 10px 50px;
+}
+
+.countries .details {
+  border-radius: 0 0 5px 5px;
+  background-color: var(--article-color);
+  margin: -10px 0 30px;
+  padding: 20px;
+  color: var(--text-color);
+  transition: background-color 0.4s;
+}
+
 
 .btn1 {
   display: flex;
@@ -103,8 +125,14 @@ body {
   padding: 15px;
 }
 
+header.light-theme {
+  background-color: var(--light-mode-background);
+  color: var(--light-mode-text);
+}
 
-
+.header i {
+  cursor: pointer;
+}
 /* Filter */
 
 .filter {
@@ -114,6 +142,34 @@ body {
   justify-content: space-between;
   padding: 20px;
 }
+
+filter.light-theme {
+  background-color: var(--light-mode-background);
+  color: var(--dark-bg-color)
+}
+.form input,
+.form select {
+  background-color: var(--article-color);
+  padding: 12px;
+  font-family: inherit;
+  border: none;
+  border-radius: 5px;
+  color: var(--text-color);
+}
+
+.form input::placeholder {
+  color: var(--text-color);
+}
+
+.form input.light-theme,
+.form select.light-theme {
+  background-color: var(--light-mode-input);
+}
+
+
+
+
+
 
 .filter .form-control {
   width: 100%;

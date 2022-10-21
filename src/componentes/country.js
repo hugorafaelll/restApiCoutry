@@ -1,15 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
-
+import "../coutry.css";
 const Country = () => {
   const [country, setCountry] = useState([]);
   const { name } = useParams();
 
   useEffect(() => {
     const fetchCountryData = async () => {
-      const response = await fetch(
-        `https://restcountries.com/v3.1/name/${name}`
-      );
+      const response = await fetch(`https://restcountries.com/v2/name/${name}`);
       const country = await response.json();
       setCountry(country);
       console.log(country);
@@ -32,7 +30,9 @@ const Country = () => {
             population,
             region,
             subregion,
+            currencies,
             languages,
+            nativeName,
           } = c;
 
           return (
@@ -48,19 +48,25 @@ const Country = () => {
                 <div className="country-details">
                   <div>
                     <h5>
+                      Native Name :<span> {nativeName}</span>
+                    </h5>
+                    <h5>
                       Capital :<span> {capital}</span>
                     </h5>
                     <h5>
-                      Region :<span>{region}</span>
+                      Region:<span> {region}</span>
                     </h5>
                     <h5>
-                      Sub-region :<span>{subregion}</span>
+                      Sub-region:<span> {subregion}</span>
                     </h5>
                     <h5>
-                      Pupulation :<span> {population}</span>
+                      Pupulation:<span> {population}</span>
                     </h5>
                     <h5>
-                      Languages:<span> {languages.prs}</span>
+                      Language:<span> {languages[0].name}</span>
+                    </h5>
+                    <h5>
+                      Currencies: <span>{currencies[0].name}</span>
                     </h5>
                   </div>
                 </div>

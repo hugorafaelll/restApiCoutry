@@ -1,0 +1,38 @@
+.country{
+    padding: 50px;
+}
+
+.btn-light{
+    margin-botton:30px;
+    display: inline-block;
+
+}
+
+.country article .country-details div{
+    margin: 20px 0;
+}
+
+.country article .country-details div h2{
+    font-weight:600;
+    font-size:30px;
+    letter-spacing: 1px;
+}
+
+.country article .country-details div h5 {
+    font-weight: 600;
+    font-size:16px;
+    margin: 10px 0;
+}
+
+.country article .country-details div span {
+    font-weight: 300;
+}
+
+
+@media (min-width:992px){
+    .country article {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
